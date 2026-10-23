@@ -1,0 +1,215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project Freedom | 15-Day Automation Workbook</title>
+<style>
+:root{--ink:#172338;--muted:#64748b;--bg:#eef2f7;--paper:#fff;--navy:#101827;--blue:#2456a6;--teal:#0f766e;--line:#dce4ef;--soft:#f4f7fb;--gold:#d99a24}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}header{background:radial-gradient(circle at 82% 10%,#244875,transparent 34%),linear-gradient(135deg,#101827,#1a3151);color:white;padding:42px max(5%,calc((100% - 1120px)/2))}.eyebrow{color:#9de6dc;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800}h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.1;letter-spacing:-.04em;margin:.5rem 0 1rem}header p{color:#d7e2f0;max-width:780px}.layout{max-width:1120px;margin:auto;padding:22px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:22px}.sidebar,.panel,.day{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 25px #10274708}.sidebar{align-self:start;position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}.sidebar a{display:block;text-decoration:none;color:#33445f;padding:5px 7px;border-radius:7px;font-size:.85rem}.sidebar a:hover{background:var(--soft)}main{min-width:0}.panel,.day{margin-bottom:18px;padding:clamp(18px,3vw,28px)}h2{color:#18365e;line-height:1.25;margin:.3rem 0 .8rem}h3{color:#24466f;margin:1.2rem 0 .35rem;font-size:1.03rem}.muted,.small{color:var(--muted)}.small{font-size:.85rem}.notice{background:#fff8e8;border-left:4px solid var(--gold);padding:12px 14px;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mini{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:13px}.mini b{display:block;color:#204879}.top{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--teal);font-size:.76rem;font-weight:900;letter-spacing:.12em}.phase{letter-spacing:0;background:#edf5f4;padding:4px 9px;border-radius:999px;color:#17675f}.goal{background:#f2f7ff;padding:11px;border-radius:9px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#111d30;color:#e6f3ff;padding:14px;border-radius:10px;font: .9rem/1.6 ui-monospace,Consolas,monospace}.done,.checklist label{display:flex;gap:9px;align-items:flex-start;background:#f0f8f5;padding:11px;border-radius:8px;margin:16px 0}.done input,.checklist input{width:18px;height:18px;margin-top:4px;accent-color:var(--teal)}textarea{width:100%;min-height:120px;border:1px solid #c8d4e3;border-radius:9px;padding:12px;font:inherit;resize:vertical;background:#fcfdff}details{border:1px solid var(--line);padding:10px 12px;border-radius:9px;margin:12px 0}summary{cursor:pointer;font-weight:750;color:#24466f}.tag{display:inline-block;background:#e9f3f4;color:#14615d;border-radius:6px;padding:3px 7px;font-size:.78rem;font-weight:800}button{border:0;border-radius:8px;padding:9px 12px;background:var(--blue);color:white;font:inherit;font-weight:700;cursor:pointer;margin:4px 2px}.secondary{background:#e7eef8;color:#203b60}progress{width:100%;height:13px;accent-color:var(--teal)}.search{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin:9px 0}.day.hide{display:none}table{width:100%;border-collapse:collapse}th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{background:#f1f5fa}.foot{text-align:center;color:var(--muted);font-size:.82rem;padding:20px}
+@media(max-width:850px){.layout{display:block;padding:12px}.sidebar{position:static;max-height:none;margin-bottom:15px}.grid{grid-template-columns:1fr}}
+@media print{body{background:white;font-size:11pt}.layout{display:block;padding:0}.sidebar,button,.search{display:none!important}header{background:white;color:black;padding:20px;border-bottom:2px solid #222}header p{color:#333}.panel,.day{box-shadow:none;border:1px solid #bbb;break-inside:avoid;margin:0 0 14px;padding:17px}.day{break-before:page}textarea{min-height:80px}}
+</style></head><body>
+<header><div class="eyebrow">Project Freedom · Personal learning system</div><h1>15-Day Automation Foundations Workbook</h1><p>A beginner-first study guide to business automation, workflow logic, n8n concepts, data, APIs, reliability, security, and AI automation.</p><p class="small">Prepared for Aditya · Study on your phone now; begin hands-on building when your laptop returns.</p></header>
+<div class="layout"><aside class="sidebar"><b>Workbook navigation</b><p class="small">Study one day at a time. Notes save in this browser when available.</p><progress id="progress" max="15" value="0"></progress><p id="progressText" class="small">0 of 15 days complete</p><input id="search" class="search" placeholder="Find a topic…"><a href="#day1">Day 01 · Automation basics</a><a href="#day2">Day 02 · Finding useful tasks</a><a href="#day3">Day 03 · Process mapping</a><a href="#day4">Day 04 · Conditions and branching</a><a href="#day5">Day 05 · Data and records</a><a href="#day6">Day 06 · JSON essentials</a><a href="#day7">Day 07 · Automation platforms and n8n</a><a href="#day8">Day 08 · Triggers and webhooks</a><a href="#day9">Day 09 · APIs and HTTP</a><a href="#day10">Day 10 · Expressions and mapping</a><a href="#day11">Day 11 · Credentials and safety</a><a href="#day12">Day 12 · Debugging and reliability</a><a href="#day13">Day 13 · JavaScript essentials</a><a href="#day14">Day 14 · AI and agents</a><a href="#day15">Day 15 · Project design and readiness</a><hr><button id="export">Export backup</button><button id="import" class="secondary">Import backup</button><input id="load" type="file" accept="application/json" hidden><button id="print" class="secondary">Print / Save PDF</button><p id="storage" class="small" aria-live="polite"></p></aside>
+<main>
+<section class="panel"><span class="tag">START HERE</span><h2>How to use this workbook</h2><p>Read the lesson, study the example, attempt the exercise in your own words, then tick the box. Aim for 60–90 minutes daily, but take longer if needed.</p><div class="grid"><div class="mini"><b>Days 1–4</b>Understand automation, business value, process maps, and logic.</div><div class="mini"><b>Days 5–8</b>Understand data, JSON, n8n vocabulary, and triggers.</div><div class="mini"><b>Days 9–12</b>Learn API concepts, expressions, security, and debugging.</div><div class="mini"><b>Days 13–15</b>Learn coding essentials, AI workflow safety, and project design.</div></div><p class="notice"><b>Realistic expectation:</b> This workbook teaches the core concepts for this beginner roadmap. No single workbook can replace all future documentation because tools, interfaces, API requirements, prices, and features change. When you build with a real service, use its current official documentation for exact settings.</p><p class="notice"><b>Safety:</b> Use fictional data. Never put passwords, API keys, access tokens, or real customer details in these notes. Local browser storage is not cloud sync; export backups regularly.</p></section>
+<section class="panel"><h2>Roadmap overview</h2><table><tr><th>Days</th><th>Focus</th><th>Expected result</th></tr><tr><td>1–2</td><td>Automation and business opportunities</td><td>Understand what to automate and why.</td></tr><tr><td>3–4</td><td>Process maps and logic</td><td>Plan workflow steps and decisions.</td></tr><tr><td>5–6</td><td>Data and JSON</td><td>Understand data passing between steps.</td></tr><tr><td>7–8</td><td>n8n concepts and triggers</td><td>Understand nodes, executions, and workflow starts.</td></tr><tr><td>9–10</td><td>APIs and expressions</td><td>Understand integrations and data mapping.</td></tr><tr><td>11–12</td><td>Security and reliability</td><td>Protect access and handle failures safely.</td></tr><tr><td>13–15</td><td>JavaScript, AI, and project planning</td><td>Prepare a safe first project.</td></tr></table></section>
+
+<section class="day" id="day1" data-day="1">
+<div class="top"><span>DAY 01</span><span class="phase">Foundations</span></div>
+<h2>Automation basics</h2>
+<p class="goal"><b>Goal:</b> Automation basics — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Automation is software doing a task automatically after an event, schedule, or rule. A process is the work sequence; a workflow is connected steps; a trigger starts it; an action does work; input is received data; output is produced data; an execution is one run.</p>
+<h3>Worked example</h3><pre>New enquiry → check required fields → save lead → notify staff.</pre>
+<h3>Practice</h3><p>Draw a process you know. Label its trigger, inputs, actions, output, and one possible failure.</p>
+<label class="done"><input type="checkbox" data-save="done1"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Automation uses software to perform steps automatically. AI is optional.</p></details>
+<h3>My notes</h3><textarea data-save="notes1" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day2" data-day="2">
+<div class="top"><span>DAY 02</span><span class="phase">Foundations</span></div>
+<h2>Finding useful tasks</h2>
+<p class="goal"><b>Goal:</b> Finding useful tasks — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Good candidates are frequent, repetitive, rule-clear, valuable, and low-risk. Value may mean time saved, fewer errors, faster responses, or better visibility. An exception is a case outside the normal path. Human-in-the-loop means a person reviews or approves an important step.</p>
+<h3>Worked example</h3><pre>A notification for every new form is a safer first project than automatically approving refunds.</pre>
+<h3>Practice</h3><p>List three repetitive tasks. Score each for frequency, clarity, value, and risk. Choose one small candidate.</p>
+<label class="done"><input type="checkbox" data-save="done2"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Choose a repeatable task with clear rules, useful benefits, and manageable risk.</p></details>
+<h3>My notes</h3><textarea data-save="notes2" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day3" data-day="3">
+<div class="top"><span>DAY 03</span><span class="phase">Workflow logic</span></div>
+<h2>Process mapping</h2>
+<p class="goal"><b>Goal:</b> Process mapping — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>A process map shows steps, decisions, owners, and results. A dependency means one step needs another step&#x27;s output. A decision point creates different paths. Acceptance criteria define what success looks like.</p>
+<h3>Worked example</h3><pre>Form arrives → validate → [valid?] yes: save; no: send to review.</pre>
+<h3>Practice</h3><p>Map an enquiry workflow. Include missing contact details, duplicate submissions, and notification failure.</p>
+<label class="done"><input type="checkbox" data-save="done3"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Every step should have a clear purpose, input, output, and next step.</p></details>
+<h3>My notes</h3><textarea data-save="notes3" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day4" data-day="4">
+<div class="top"><span>DAY 04</span><span class="phase">Workflow logic</span></div>
+<h2>Conditions and branching</h2>
+<p class="goal"><b>Goal:</b> Conditions and branching — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>A condition evaluates true or false. IF/ELSE chooses paths. AND means every condition must be true; OR means at least one must be true; NOT reverses a condition. A filter allows only matching records to continue. Validation checks data against rules.</p>
+<h3>Worked example</h3><pre>IF email exists AND consent is true → prepare a reply; ELSE → flag for review.</pre>
+<h3>Practice</h3><p>Write rules for missing email, order above 5000, urgent support, and new vs returning customer.</p>
+<label class="done"><input type="checkbox" data-save="done4"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>AND requires all conditions; OR requires at least one. Test both passing and failing examples.</p></details>
+<h3>My notes</h3><textarea data-save="notes4" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day5" data-day="5">
+<div class="top"><span>DAY 05</span><span class="phase">Data essentials</span></div>
+<h2>Data and records</h2>
+<p class="goal"><b>Goal:</b> Data and records — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>A record describes one entity. A field is an attribute, such as email. A string is text; a number supports numeric operations; a Boolean is true/false. Null, a missing field, and an empty string differ. Arrays are ordered lists. A unique identifier distinguishes records. Normalization makes formats consistent.</p>
+<h3>Worked example</h3><pre>1500 is a number; &quot;1500&quot; is text. Extra spaces can make values inconsistent.</pre>
+<h3>Practice</h3><p>Create five fictional leads including duplicate, missing email, extra spaces, and budget stored as text. Decide how to handle each.</p>
+<label class="done"><input type="checkbox" data-save="done5"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Inspect actual values; normalize deliberately and never invent missing customer details.</p></details>
+<h3>My notes</h3><textarea data-save="notes5" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day6" data-day="6">
+<div class="top"><span>DAY 06</span><span class="phase">Data essentials</span></div>
+<h2>JSON essentials</h2>
+<p class="goal"><b>Goal:</b> JSON essentials — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>JSON is a text format for structured data, not a programming language. Objects use curly braces; arrays use square brackets; keys and strings use double quotes. Values may be strings, numbers, Booleans, null, arrays, or objects. Array indexes start at zero. JSON has no comments or trailing commas.</p>
+<h3>Worked example</h3><pre>{
+  &quot;name&quot;: &quot;Sam&quot;,
+  &quot;budget&quot;: 1500,
+  &quot;needsReply&quot;: true,
+  &quot;services&quot;: [&quot;Automation&quot;, &quot;Website&quot;],
+  &quot;address&quot;: {&quot;city&quot;: &quot;Delhi&quot;},
+  &quot;assignedTo&quot;: null
+}</pre>
+<h3>Practice</h3><p>Change budget to 2500, add a service, change city, set needsReply to false, and explain assignedTo.</p>
+<label class="done"><input type="checkbox" data-save="done6"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Objects use braces, arrays use brackets, strings use double quotes, and Boolean/null values are unquoted.</p></details>
+<h3>My notes</h3><textarea data-save="notes6" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day7" data-day="7">
+<div class="top"><span>DAY 07</span><span class="phase">Tool concepts</span></div>
+<h2>Automation platforms and n8n</h2>
+<p class="goal"><b>Goal:</b> Automation platforms and n8n — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>An automation platform connects services and coordinates steps. In n8n, a node is one step; the canvas is the editor; a connection passes control/data; parameters configure a node; credentials store authentication; an execution is one run; pinned data is saved sample output and may be stale.</p>
+<h3>Worked example</h3><pre>Manual Trigger → Edit Fields → inspect the output.</pre>
+<h3>Practice</h3><p>Draw a three-node workflow and annotate each node&#x27;s input, action, and output.</p>
+<label class="done"><input type="checkbox" data-save="done7"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>No. Check node configuration and inspect actual input and output data.</p></details>
+<h3>My notes</h3><textarea data-save="notes7" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day8" data-day="8">
+<div class="top"><span>DAY 08</span><span class="phase">Tool concepts</span></div>
+<h2>Triggers and webhooks</h2>
+<p class="goal"><b>Goal:</b> Triggers and webhooks — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>A manual trigger starts a test run when you choose. A schedule trigger runs at configured times. An app trigger responds to a supported event. A webhook receives an incoming HTTP request. Polling repeatedly checks for updates. A payload is the data sent with an event. Test and production webhook URLs may behave differently.</p>
+<h3>Worked example</h3><pre>Daily reminder → schedule trigger. New form submission → event trigger or webhook.</pre>
+<h3>Practice</h3><p>Choose a trigger for daily reminders, form submissions, and a monthly report. Explain why.</p>
+<label class="done"><input type="checkbox" data-save="done8"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>A webhook receives an incoming request; an HTTP Request node sends a request to another service.</p></details>
+<h3>My notes</h3><textarea data-save="notes8" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day9" data-day="9">
+<div class="top"><span>DAY 09</span><span class="phase">Integrations</span></div>
+<h2>APIs and HTTP</h2>
+<p class="goal"><b>Goal:</b> APIs and HTTP — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>An API is a defined interface for software communication. An endpoint is a URL for a resource or operation. HTTP methods include GET, POST, PATCH, and DELETE; exact behaviour depends on the API. Headers carry metadata/authentication; query parameters are in the URL; a body contains submitted data. Status codes describe the response. Pagination retrieves multiple pages; rate limits restrict request frequency; timeouts limit waiting.</p>
+<h3>Worked example</h3><pre>Common codes: 200 success, 201 created, 400 bad request, 401 unauthenticated, 403 forbidden, 404 not found, 429 rate limited, 500 server error.</pre>
+<h3>Practice</h3><p>Label the method, endpoint, headers, body, and expected response in a fictional request. Explain 401, 404, and 429.</p>
+<label class="done"><input type="checkbox" data-save="done9"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Identify method, URL, parameters, headers, body, authentication, status, and response body.</p></details>
+<h3>My notes</h3><textarea data-save="notes9" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day10" data-day="10">
+<div class="top"><span>DAY 10</span><span class="phase">Data flow</span></div>
+<h2>Expressions and mapping</h2>
+<p class="goal"><b>Goal:</b> Expressions and mapping — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Field mapping connects a source field to a destination field. A fixed value stays the same; an expression reads or calculates a dynamic value. Data shape means the real structure of incoming data. An item is one unit of data; workflows can pass multiple items. Nested fields sit inside objects.</p>
+<h3>Worked example</h3><pre>In n8n, `{{ $json.email }}` reads email from the current item; `{{ $json.address.city }}` reads a nested city if that path exists.</pre>
+<h3>Practice</h3><p>Given a fictional object, identify how to access name, email, and address.city. Explain why `$json.body.email` works only when email is inside body.</p>
+<label class="done"><input type="checkbox" data-save="done10"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Inspect the previous node&#x27;s actual output and match the field path exactly.</p></details>
+<h3>My notes</h3><textarea data-save="notes10" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day11" data-day="11">
+<div class="top"><span>DAY 11</span><span class="phase">Security</span></div>
+<h2>Credentials and safety</h2>
+<p class="goal"><b>Goal:</b> Credentials and safety — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>An API key or token can grant access. OAuth lets an app receive authorized access without directly sharing the user&#x27;s password. Scopes define permissions. Least privilege means granting only necessary access. Keep secrets out of public notes, source code, screenshots, and logs. Use fictional or sanitized test data.</p>
+<h3>Worked example</h3><pre>Use a dedicated test account and only the permissions needed for the workflow.</pre>
+<h3>Practice</h3><p>Make a security checklist for an enquiry workflow. Identify necessary data, who can access it, and how to revoke access.</p>
+<label class="done"><input type="checkbox" data-save="done11"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Anyone who obtains the key may misuse its permissions. Store secrets securely and revoke/rotate exposed keys.</p></details>
+<h3>My notes</h3><textarea data-save="notes11" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day12" data-day="12">
+<div class="top"><span>DAY 12</span><span class="phase">Reliability</span></div>
+<h2>Debugging and reliability</h2>
+<p class="goal"><b>Goal:</b> Debugging and reliability — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Debugging finds where actual behaviour first differs from expected behaviour. Inspect node input, settings, and output. A retry runs an operation again; backoff waits longer between attempts. Idempotency prevents repeated requests from causing unintended duplicate effects. Logs and alerts help detect failures. A timeout does not prove the remote action failed.</p>
+<h3>Worked example</h3><pre>A message request times out; blindly retrying may send the message twice if the first request succeeded.</pre>
+<h3>Practice</h3><p>Plan responses for missing email, invalid data, duplicate form, API 429, and notification timeout.</p>
+<label class="done"><input type="checkbox" data-save="done12"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>A remote action may have succeeded even if the response was lost. Verify state or use an idempotent design.</p></details>
+<h3>My notes</h3><textarea data-save="notes12" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day13" data-day="13">
+<div class="top"><span>DAY 13</span><span class="phase">Advanced foundations</span></div>
+<h2>JavaScript essentials</h2>
+<p class="goal"><b>Goal:</b> JavaScript essentials — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>A variable names a value. `const` prevents reassignment of the binding; `let` allows reassignment. Objects group properties; arrays store lists. Conditions choose behaviour. Functions accept inputs and can return results. `map()` transforms array elements; `filter()` keeps matching elements. n8n Code nodes also have platform-specific input/output conventions.</p>
+<h3>Worked example</h3><pre>const lead = { name: &quot;Sam&quot;, budget: 1500 };
+const greeting = &quot;Hello &quot; + lead.name;
+function addTax(amount) { return amount * 1.18; }</pre>
+<h3>Practice</h3><p>Explain each line and predict addTax(100). You do not need to master JavaScript before your first workflow.</p>
+<label class="done"><input type="checkbox" data-save="done13"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>A variable names a value, an object groups properties, and a function can return a result from its input.</p></details>
+<h3>My notes</h3><textarea data-save="notes13" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day14" data-day="14">
+<div class="top"><span>DAY 14</span><span class="phase">AI foundations</span></div>
+<h2>AI and agents</h2>
+<p class="goal"><b>Goal:</b> AI and agents — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Rule-based automation follows explicit rules. AI models generate or interpret content and can be wrong. A prompt gives instructions and context. Structured output constrains format but does not guarantee truth. Hallucination means plausible but incorrect output. An AI agent may choose steps or tools toward a goal. Evaluation tests output against criteria; human approval adds a review before important actions.</p>
+<h3>Worked example</h3><pre>Enquiry → validate → AI drafts reply from supplied facts → human approves → send.</pre>
+<h3>Practice</h3><p>Write a prompt that forbids inventing prices or deadlines and asks the model to flag missing information. List three checks before sending.</p>
+<label class="done"><input type="checkbox" data-save="done14"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>Start with drafts and human approval. Test accuracy, privacy, costs, and failure cases.</p></details>
+<h3>My notes</h3><textarea data-save="notes14" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="day" id="day15" data-day="15">
+<div class="top"><span>DAY 15</span><span class="phase">Practical readiness</span></div>
+<h2>Project design and readiness</h2>
+<p class="goal"><b>Goal:</b> Project design and readiness — understand the core concepts and explain them in your own words.</p>
+<h3>Learn</h3><p>Scope defines what a project will and will not do. A test case specifies input and expected result. The happy path is the normal case; edge cases cover unusual conditions. Observability uses logs/status/alerts to understand behaviour. Maintenance keeps integrations working as services change. Measure actual results; never invent performance claims.</p>
+<h3>Worked example</h3><pre>Manual/Form Trigger → validate → check duplicates → save lead → draft reply → human approval → test notification → log result.</pre>
+<h3>Practice</h3><p>Write your business problem, workflow steps, inputs/outputs, five test cases, safeguards, and success measures. Start with fictional data on your laptop.</p>
+<label class="done"><input type="checkbox" data-save="done15"> I studied this lesson and attempted the exercise.</label>
+<details><summary>Show self-check answer</summary><p>If not, identify the specific concept to revisit. You can begin practical work without mastering every advanced topic.</p></details>
+<h3>My notes</h3><textarea data-save="notes15" placeholder="Explain it in my own words…&#10;My example…&#10;What confused me…&#10;Question to revisit…"></textarea>
+</section>
+<section class="panel"><span class="tag">CAPSTONE</span><h2>Plan your first project: Enquiry Intake</h2><p>Build this only when the laptop returns. Start with a manual trigger and fictional data; connect external services after testing the basics.</p><pre>Manual/Form Trigger → Validate fields → Check duplicates → Save lead → Draft reply → Human approval → Test notification → Log result</pre>
+<label>Business problem<textarea data-save="cap_problem" placeholder="Who has the problem, and what repetitive work do they do?"></textarea></label>
+<label>Workflow steps and branches<textarea data-save="cap_steps" placeholder="Trigger → action → decision → outcome…"></textarea></label>
+<label>Inputs and outputs<textarea data-save="cap_data" placeholder="Fields, data types, required values, and destination."></textarea></label>
+<label>Five test cases<textarea data-save="cap_tests" placeholder="Normal case, missing field, duplicate, invalid data, service failure…"></textarea></label>
+<label>Risks and safeguards<textarea data-save="cap_safety" placeholder="Permissions, credentials, privacy, approvals, retries…"></textarea></label>
+<label>Success measures<textarea data-save="cap_measures" placeholder="What will you measure in your own tests?"></textarea></label>
+</section>
+<section class="panel"><h2>Readiness checklist</h2><p>Check each item only when you can explain it honestly.</p><div class="checklist"><label><input type="checkbox" data-save="ready0"> I can identify a business problem worth automating.</label><label><input type="checkbox" data-save="ready1"> I can draw a workflow and explain each step.</label><label><input type="checkbox" data-save="ready2"> I understand triggers, actions, conditions, inputs, and outputs.</label><label><input type="checkbox" data-save="ready3"> I can read basic JSON and common data types.</label><label><input type="checkbox" data-save="ready4"> I know to inspect node input/output before mapping fields.</label><label><input type="checkbox" data-save="ready5"> I can explain webhooks versus outgoing HTTP requests.</label><label><input type="checkbox" data-save="ready6"> I understand API methods, headers, bodies, and status codes.</label><label><input type="checkbox" data-save="ready7"> I know how to protect credentials and limit permissions.</label><label><input type="checkbox" data-save="ready8"> I have tests for normal, missing, invalid, duplicate, and failure cases.</label><label><input type="checkbox" data-save="ready9"> I understand why blind retries may duplicate actions.</label><label><input type="checkbox" data-save="ready10"> I will use fictional data and human approval for consequential AI actions.</label><label><input type="checkbox" data-save="ready11"> I can explain how I would measure success from actual tests.</label></div></section>
+<section class="panel"><h2>Quick glossary</h2><table><tr><th>Workflow</th><td>Connected steps that perform a process.</td></tr><tr><th>Trigger</th><td>Event or schedule that starts a workflow.</td></tr><tr><th>Node</th><td>One workflow step.</td></tr><tr><th>Execution</th><td>One run of a workflow.</td></tr><tr><th>JSON</th><td>Text format for structured data.</td></tr><tr><th>API</th><td>Defined interface for software communication.</td></tr><tr><th>Webhook</th><td>Endpoint that receives an incoming request.</td></tr><tr><th>HTTP Request</th><td>Action that sends a request to another service.</td></tr><tr><th>Expression</th><td>Dynamic value read or calculated from data.</td></tr><tr><th>Credential</th><td>Stored authentication configuration.</td></tr><tr><th>Idempotency</th><td>Protection against unintended repeated effects.</td></tr><tr><th>Human-in-the-loop</th><td>Human review or approval in a process.</td></tr></table></section>
+<section class="panel"><h2>Official references for later practical work</h2><p>The lesson content above is self-contained for the core 15-day concepts. These links are optional references for current platform-specific details once you begin building.</p><ul><li><a href="https://docs.n8n.io/" target="_blank" rel="noopener noreferrer">n8n documentation</a></li><li><a href="https://docs.n8n.io/try-it-out/tutorial-first-workflow/" target="_blank" rel="noopener noreferrer">n8n first workflow tutorial</a></li><li><a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/" target="_blank" rel="noopener noreferrer">n8n HTTP Request node</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="noopener noreferrer">MDN HTTP overview</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">MDN JavaScript guide</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON" target="_blank" rel="noopener noreferrer">MDN JSON guide</a></li></ul><p class="small">This is an independent study workbook, not an official n8n course or certification.</p></section>
+<div class="foot">Project Freedom · 15-Day Automation Foundations Workbook · Offline-capable HTML</div>
+</main></div>
+<script>
+const KEY='project-freedom-automation-workbook-v2';let state={},storageOK=true;
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}');if(!state||typeof state!=='object'||Array.isArray(state))state={};localStorage.setItem(KEY,JSON.stringify(state));}catch(e){storageOK=false;state={};}
+const fields=[...document.querySelectorAll('[data-save]')];
+function update(){const n=fields.filter(x=>x.type==='checkbox'&&/^done\d+$/.test(x.dataset.save)&&x.checked).length;progress.value=n;progressText.textContent=n+' of 15 days complete';}
+function status(){storage.textContent=storageOK?'Autosave available in this browser. Export backups regularly.':'Browser storage unavailable; export a backup before closing.';}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));storageOK=true;}catch(e){storageOK=false;}status();update();}
+function fill(){fields.forEach(x=>{let v=state[x.dataset.save];if(x.type==='checkbox')x.checked=v===true;else x.value=typeof v==='string'?v:'';});update();}
+fields.forEach(x=>x.addEventListener('input',()=>{state[x.dataset.save]=x.type==='checkbox'?x.checked:x.value;persist();}));fill();status();
+document.getElementById('export').onclick=()=>{let blob=new Blob([JSON.stringify({workbook:KEY,exportedAt:new Date().toISOString(),data:state},null,2)],{type:'application/json'});let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='project-freedom-automation-workbook-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
+document.getElementById('import').onclick=()=>document.getElementById('load').click();
+document.getElementById('load').onchange=async ev=>{let f=ev.target.files[0];if(!f)return;try{let o=JSON.parse(await f.text());if(o.workbook!==KEY||!o.data||typeof o.data!=='object'||Array.isArray(o.data))throw Error('Incompatible backup');if(!confirm('Replace current notes and progress with this backup?'))return;let clean={};fields.forEach(x=>{let v=o.data[x.dataset.save];if(x.type==='checkbox'&&typeof v==='boolean')clean[x.dataset.save]=v;else if(x.type!=='checkbox'&&typeof v==='string')clean[x.dataset.save]=v;});state=clean;fill();persist();}catch(err){alert('Could not import backup: '+err.message);}ev.target.value='';};
+document.getElementById('print').onclick=()=>{fields.filter(x=>x.tagName==='TEXTAREA').forEach(x=>{x.style.height='auto';x.style.height=Math.max(90,x.scrollHeight+5)+'px';});window.print();};
+document.getElementById('search').addEventListener('input',ev=>{let q=ev.target.value.toLowerCase();document.querySelectorAll('.day').forEach(d=>d.classList.toggle('hide',q&&!d.innerText.toLowerCase().includes(q));});
+</script></body></html>
